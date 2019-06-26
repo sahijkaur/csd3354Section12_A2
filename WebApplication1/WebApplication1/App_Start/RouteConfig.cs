@@ -22,7 +22,7 @@ namespace WebApplication1
             routes.MapRoute(
                 name: "MyCustomRoute",
                 url: "Demo/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { action = "Index", id = UrlParameter.Optional }
             );
 
         }

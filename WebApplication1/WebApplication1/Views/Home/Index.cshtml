@@ -1,6 +1,33 @@
 ﻿@{
     ViewBag.Title = "Home Page";
+    int a, b, c;
+    string add;
+    a = 10;
+    b = 20;
+    c = a + b;
+    add = "Additio is: " + c;
+    <h2>@add</h2>
 }
+
+<h2> HTML Helper Controler</h2>
+<table border="1">
+    <tr>
+        <td> Name</td>
+        <td>@Html.TextBox("Name")</td>
+    </tr>
+    <tr>
+        <td> Address</td>
+        <td>@Html.TextArea("Address")</td>
+    </tr>
+    <tr>
+        <td> Languages</td>
+        <td>Tamil @Html.CheckBox("Tamil") English @Html.CheckBox("English")</td>
+    </tr>
+    <tr>
+        <td> Gender</td>
+        <td>Male @Html.RadioButton("Gender", "Male") Female @Html.RadioButton("Gender", "Female")</td>
+    </tr>
+</table>
 
 <div class="jumbotron">
     <h1>ASP.NET</h1>
